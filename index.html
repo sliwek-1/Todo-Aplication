@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="input-animation.js" defer></script>
+    <script src="switch-page.js" defer></script>
+    <script src="todos.js" defer></script>
+    <title>ToDoList Aplication</title>
+</head>
+<body>
+    <div class="container">
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="list-nav-item active" data-id="todos">W trakcie</li>
+                <li class="list-nav-item" data-id="doneTodos">Zrobione</li>
+            </ul>
+        </nav>
+        <div class="todolist">
+            <div class="list active"></div>
+            <div class="list-done-todos"></div>
+            <div class="add-section">
+                    <div class="text">
+                        <input type="text" name="to-do-text" class="to-do-text">
+                        <div class="line"></div>
+                    </div>
+                    <button class="submit"><ion-icon name="paper-plane-outline"></ion-icon></button>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
